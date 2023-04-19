@@ -5,6 +5,20 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
     border: 0;
 }
 
+/* Style to create a fluid image */
+img {
+	max-width: 100%;
+}
+
+/* Styles for Mobile Layout */
+
+/* Style for container centers the page and sets the element width */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Style rules for body and images */
 body {
     background-color: #fbf550;
@@ -54,6 +68,64 @@ nav li a {
 /* Show mobile class, hide tablet desktop class */
 .mobile {
     display: block;
+}
+
+.mobile h3 {
+    text-align: center;
+}
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article img {
+    margin: 0 auto;
+}
+
+article ul {
+    margin-left: 10%;
+}
+
+article:nth-of-type(1) {
+    background-color: #f9cb15;
+}
+
+article:nth-of-type(2) {
+    background-color: #4ccae6;
+}
+
+article:nth-of-type(3) {
+    background-color: #fed52f;
+}
+
+.pic-text {
+    font-size: 1em;
+    padding: 10px;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2%;
+    background-color: #38d510;
+    box-shadow: 5px 5px 8px #000;
+    text-shadow: 5px 5px 5px #ccc;
+    border-radius: 0 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item4 {
+    grid-column: 1/span 3;
 }
 
 .tablet-desktop {
@@ -207,3 +279,65 @@ footer p a {
         color: #000;
     }
 }
+
+/* tablet Viewport: Style rules for table */
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 8px #000;
+    text-shadow: 5px 5px 5px #ccc;
+    border-radius: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption {
+    font-size: 4.5em
+    font-weight: bold;
+    padding: 1%;
+}
+
+th, td{
+    border: 1px solid #000;
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th {
+    background-color: #4ccae6;
+    color: #000;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+th {
+    background-color: #4ccae6;
+    color:#000;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9cb15
+}
+
+tr:nth-child(even) {
+    background-color: #f9cb15
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width 1921 px) {
+
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 80%;
+    }
+
+}
+
